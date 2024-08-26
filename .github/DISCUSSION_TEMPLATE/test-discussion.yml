@@ -12,17 +12,17 @@ body:
           - for End date, indicate the date when the feature should be part of a functional demo
   - type: textarea
     attributes:
-      label: Problem
+      label: Purpose
       description: Describe the problem this feature addresses. Make sure you're addressing root causes, not symptoms.
     validations:
       required: true
-  - type: textarea
+  - type: textfield
     attributes:
       label: User
       description: Specify the target user group.
     validations:
       required: true
-  - type: textarea
+  - type: textbox
     attributes:
       label: Solution
       description: State the goal of the feature. Be as detailed as possible.
