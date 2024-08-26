@@ -18,7 +18,6 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
     attributes:
       label: Acquisition type
       description: Specify the acquisition types this task applies to.
@@ -31,7 +30,6 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
     attributes:
       label: Clinical usefulness
       description: How useful is this task expected to be for clinicians?
@@ -44,7 +42,6 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
     attributes:
       label: Prioroty
       options:
