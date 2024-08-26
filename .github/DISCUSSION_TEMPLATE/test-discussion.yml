@@ -13,55 +13,55 @@ body:
       required: true
   - type: input
     attributes:
-      label: Cancer type:
+      label: Cancer type
       description: Specify the cancer types this task applies to.
     validations:
       required: true
   - type: input
     attributes:
-      label: Acquisition type:
+      label: Acquisition type
       description: Specify the acquisition types this task applies to.
     validations:
       required: true
   - type: input
     attributes:
-      label: Clinical usefulness:
+      label: Clinical usefulness
       description: Specify any of: 0 - not useful, 1 - useful, 2 - very, 3 - essential.
     validations:
       required: true
   - type: input
     attributes:
-      label: Priority:
+      label: Priority
       description: Specify any of: 0 - none, 1 - low, 2 - medium, 3 - high.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Expected feasibilty:
+      label: Expected feasibilty
       description: Describe whether the task is expected to be easy/hard, feasible/infeasible.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Datasets:
+      label: Datasets
       description: Which dataset / subset of data would be used for training.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Label extraction:
+      label: Label extraction
       description: Describe how the labels will be extracted from NKI metadata (e.g. "mapping from PALGA codes").
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Labels:
+      label: Labels
       description: Describe the types of labels and annotations / give examples.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Additional comments:
+      label: Additional comments
       description: Any additional comments.
     validations:
       required: false
