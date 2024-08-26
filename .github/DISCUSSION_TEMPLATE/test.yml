@@ -1,8 +1,38 @@
----
-name: Blank issue template
-about: A blank issue template (so it shows up with a big button)
-title: ''
-labels: ''
-assignees: ''
+name: Product feature discussion issue template
+description: The default issue template used for tracking product features
+title: "<Modality>: <Feature Name> "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Instructions
 
----
+        1. Specify issue title as modality: feature name
+        1. Fill in all template fields below
+        1. After opening the issue, in the right panel with the custom fields:
+          - for modality select the relevant modality (e.g. language/pathology/radiology)
+          - for End date, indicate the date when the feature should be part of a functional demo
+  - type: textarea
+    attributes:
+      label: Problem
+      description: Describe the problem this feature addresses. Make sure you're addressing root causes, not symptoms.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: User
+      description: Specify the target user group.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Solution
+      description: State the goal of the feature. Be as detailed as possible.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Status quo and alternative solutions
+      description: State how users currently solve the problem without this feature. Are there alternative solutions to this problem? What are the limitations of these solutions?
+    validations:
+      required: true
