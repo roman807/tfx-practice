@@ -43,7 +43,7 @@ body:
       required: true
   - type: dropdown
     attributes:
-      label: Prioroty
+      label: Priority
       options:
         - 0 - none
         - 1 - low
