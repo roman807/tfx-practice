@@ -26,13 +26,13 @@ body:
   - type: input
     attributes:
       label: Clinical usefulness
-      description: Specify any of: 0 - not useful, 1 - useful, 2 - very, 3 - essential.
+      description: Specify any of 0 - not useful, 1 - useful, 2 - very, 3 - essential.
     validations:
       required: true
   - type: input
     attributes:
       label: Priority
-      description: Specify any of: 0 - none, 1 - low, 2 - medium, 3 - high.
+      description: Specify any of 0 - none, 1 - low, 2 - medium, 3 - high.
     validations:
       required: true
   - type: textarea
