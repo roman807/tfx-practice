@@ -17,22 +17,42 @@ body:
       description: Specify the cancer types this task applies to.
     validations:
       required: true
-  - type: input
+  - type: dropdown
+    id: version
     attributes:
       label: Acquisition type
       description: Specify the acquisition types this task applies to.
+      options:
+        - Excitional biopsy
+        - Punch biobsy
+        - Core biopsy 
+        - Resection
+      default: 0
     validations:
       required: true
-  - type: input
+  - type: dropdown
+    id: version
     attributes:
       label: Clinical usefulness
-      description: Specify any of 0 - not useful, 1 - useful, 2 - very, 3 - essential.
+      description: How useful is this task expected to be for clinicians?
+      options:
+        - 0 - not useful
+        - 1 - somewhat
+        - 2 - very
+        - 3 - essential
+      default: 0
     validations:
       required: true
-  - type: input
+  - type: dropdown
+    id: version
     attributes:
-      label: Priority
-      description: Specify any of 0 - none, 1 - low, 2 - medium, 3 - high.
+      label: Prioroty
+      options:
+        - 0 - none
+        - 1 - low
+        - 2 - medium
+        - 3 - high
+      default: 0
     validations:
       required: true
   - type: textarea
@@ -43,14 +63,8 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Datasets
-      description: Which dataset / subset of data would be used for training.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Label extraction
-      description: Describe how the labels will be extracted from NKI metadata (e.g. "mapping from PALGA codes").
+      label: Datasets & Annotations
+      description: Which dataset / subset of data would be used for training? Are annotations available? How will the labels be extracted from metadata?
     validations:
       required: true
   - type: textarea
