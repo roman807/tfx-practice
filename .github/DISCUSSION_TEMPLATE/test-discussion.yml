@@ -16,13 +16,13 @@ body:
       description: Describe the problem this feature addresses. Make sure you're addressing root causes, not symptoms.
     validations:
       required: true
-  - type: textfield
+  - type: input
     attributes:
       label: User
       description: Specify the target user group.
     validations:
       required: true
-  - type: textbox
+  - type: input
     attributes:
       label: Solution
       description: State the goal of the feature. Be as detailed as possible.
