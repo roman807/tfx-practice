@@ -1,36 +1,67 @@
-title: "<Modality>: <Feature Name> "
+title: "<Downstream Task> "
 body:
   - type: markdown
     attributes:
       value: |
         # Instructions
-
-        1. Specify issue title as modality: feature name
-        1. Fill in all template fields below
-        1. After opening the issue, in the right panel with the custom fields:
-          - for modality select the relevant modality (e.g. language/pathology/radiology)
-          - for End date, indicate the date when the feature should be part of a functional demo
-  - type: textarea
+        Describe the task with the fields below (enter "TBD" or "n/a" if answer is unknown)
+  - type: input
     attributes:
       label: Purpose
-      description: Describe the problem this feature addresses. Make sure you're addressing root causes, not symptoms.
+      description: State the purpose of this task (e.g. "diagnosis", "predict effectiveness immunotherapy)"
     validations:
       required: true
   - type: input
     attributes:
-      label: User
-      description: Specify the target user group.
+      label: Cancer type:
+      description: Specify the cancer types this task applies to.
     validations:
       required: true
   - type: input
     attributes:
-      label: Solution
-      description: State the goal of the feature. Be as detailed as possible.
+      label: Acquisition type:
+      description: Specify the acquisition types this task applies to.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Clinical usefulness:
+      description: Specify any of: 0 - not useful, 1 - useful, 2 - very, 3 - essential.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Priority:
+      description: Specify any of: 0 - none, 1 - low, 2 - medium, 3 - high.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Status quo and alternative solutions
-      description: State how users currently solve the problem without this feature. Are there alternative solutions to this problem? What are the limitations of these solutions?
+      label: Expected feasibilty:
+      description: Describe whether the task is expected to be easy/hard, feasible/infeasible.
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: Datasets:
+      description: Which dataset / subset of data would be used for training.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Label extraction:
+      description: Describe how the labels will be extracted from NKI metadata (e.g. "mapping from PALGA codes").
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Labels:
+      description: Describe the types of labels and annotations / give examples.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional comments:
+      description: Any additional comments.
+    validations:
+      required: false
